@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilo9.css">
+    <script src="java/scrips3.js"></script>
+    <title>Compra</title>
+</head>
+<body>
+    <div class="page-nav">
+        <center><nav class="boton">
+            <h1><a href="menu.html">REGRESAR</a></h1>
+            </nav></center>
+        <center><h1>Mi carrito</h1></center>
+        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    </div>
+    <div class="page-content">
+        <div class="product-container">
+            <h3>Mazda MX-5</h3>
+            <img src="10 AUTOS/Mazda MX-5.jpg" />
+            <h1>$450,900</h1>
+            <button class="button-add" onclick="add('Mazda MX-5', 450900)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Porche 911</h3>
+            <img src="10 AUTOS/Porche 911.jpg" />
+            <h1>$1.998M</h1>
+            <button class="button-add" onclick="add('Porche 911', 1998000)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>AlpineA110</h3>
+            <img src="10 AUTOS/AlpineA110.jpg" />
+            <h1>$1,700M</h1>
+            <button class="button-add" onclick="add('AlpineA110', 1700000)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <h3>Porche 718 Cayman</h3>
+            <img src="10 AUTOS/Porche 718 Cayman.jpg" />
+            <h1>$1,468M</h1>
+            <button class="button-add" onclick="add('Porche 718 Cayman', 1468000)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Mc Laren 570S</h3>
+            <img src="10 AUTOS/Mc Laren 570S.jpg" />
+            <h1>$240,500</h1>
+            <button class="button-add" onclick="add('Mc Laren 570S', 240500)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Mercedes-AMG C63 S</h3>
+            <img src="10 AUTOS/Mercedes-AMG C63 S.jpg" />
+            <h1>$1,874M</h1>
+            <button class="button-add" onclick="add('Mercedes-AMG C63 S', 187400)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>BMW M2 Competition</h3>
+            <img src="10 AUTOS/BMW M2.jpg" />
+            <h1>$2,580M</h1>
+            <button class="button-add" onclick="add('BMW M2', 2580000)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Nisssan GT-R</h3>
+            <img src="10 AUTOS/Nisssan GT-R.jpg" />
+            <h1>$2,791M</h1>
+            <button class="button-add" onclick="add('Nisssan GT-R', 2791600)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Toyota GR SUPRA</h3>
+            <img src="10 AUTOS/Toyota GR SUPRA.jpg" />
+            <h1>$1,316M</h1>
+            <button class="button-add" onclick="add('Toyota GR SUPRA', 1316200)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>FORD MUSTANG</h3>
+            <img src="10 AUTOS/FORD MUSTANG.jpg" />
+            <h1>$1033,4M</h1>
+            <button class="button-add" onclick="add('FORD MUSTANG', 1033400)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Aprila RSV4 1100</h3>
+            <img src="motos/Aprila.jpg" />
+            <h1>$600,000</h1>
+            <button class="button-add" onclick="add('Aprila', 23.999)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Aston Martin AMB</h3>
+            <img src="motos/Aston Martin.jpg" />
+            <h1>$150,000</h1>
+            <button class="button-add" onclick="add('Aston Martin', 108000)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Dukati STREETFIGHTER V4</h3>
+            <img src="motos/Dukati STREETFIGHTER.jpg" />
+            <h1>$461,790</h1>
+            <button class="button-add" onclick="add('Dukati STREETFIGHTER', 21990)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Dukati Panigale V4</h3>
+            <img src="motos/Dukati Panigale.jpg" />
+            <h1>$550,000</h1>
+            <button class="button-add" onclick="add('Dukati Panigale', 26190)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Honda CBR1000RR-R SP</h3>
+            <img src="motos/Honda CBR.jpg" />
+            <h1>$124,900</h1>
+            <button class="button-add" onclick="add('Honda CBR', 595000)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Kawuasaki Z</h3>
+            <img src="motos/Kawuasaki Z H2.jpg" />
+            <h1>$83,979</h1>
+            <button class="button-add" onclick="add('Kawuasaki Z', 399990)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>KTM 1290 Super Duke R</h3>
+            <img src="motos/KTM 1290.jpg" />
+            <h1>$671,790</h1>
+            <button class="button-add" onclick="add('KTM 1290', 319900)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>MV Agusta Brutale RR</h3>
+            <img src="motos/MV Agusta.jpg" />
+            <h1>$629,790</h1>
+            <button class="button-add" onclick="add('MV Agusta', 29990)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Yamaha YZF</h3>
+            <img src="motos/Yamaha YZF.jpg" />
+            <h1>$459,879</h1>
+            <button class="button-add" onclick="add('Yamaha YZF', 21899)">Agregar</button>
+        </div>
+    </div>
+</body>
+</html>

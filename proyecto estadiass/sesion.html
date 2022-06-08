@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <title>Formulario Registro</title>
+    
+    <script type="text/javascript">
+        function validar(){
+            var form = document.form;
+    
+            if(form.nombre.value==0){
+                alert("INGRESA TU NOMBRE");
+                form.nombre.value="";
+                form.nombre.focus();
+                return false;
+            }
+            if(form.apellido.value==0){
+                alert("INGRESA TUS APELLIDOS");
+                form.apellido.value="";
+                form.apellido.focus();
+                return false;
+            }
+    
+            if(form.telefono.value==0){
+                alert("INGRESA TU TELEFONO");
+                form.telefono.value="";
+                form.telefono.focus();
+                return false;
+            }
+            if(form.correo.value==0){
+                alert("INGRESA TU CORREO");
+                form.correo.value="";
+                form.correo.focus();
+                return false;
+            }
+            if(form.contraseña.value==0){
+                alert("INGRESA TU CONTRASEÑA");
+                form.contraseña.value="";
+                form.contraseña.focus();
+                return false;
+            }
+            alert("DATOS GUARDADOS");
+            form.submit();
+        }
+            </script>
+    <center><p><h1>Inicie cecion para poder acceder a la pagina para 
+     <br>   que vea los autos que tiene la agencia</h1></p></center>
+</head>
+<body>
+
+    <center><form name="form" action="#" method="POST" onsubmit="return validar();">
+        <input type="text" name="nombre" placeholder="INGRESA TU NOMBRE"> <br>
+        <input type="text" name="apellido" placeholder="INGRESA TU APELLIDO"><br>
+        <input type="text" name="telefono" placeholder="INGRESA TU NUMERO"> <br>
+        <input type="email" name="correo" placeholder="INGRESA TU CORREO"><br>
+        <input type="text" name="contraseña" placeholder="INGRESA TU CONTRASEÑA"> <br>
+
+        <button onclick="validar ();"><a href="menu.html"></a>ENVIAR DATOS</button>
+        <button><a href="bienvenida.html">INICIAR</button></a>
+    </form> </center>
+
+
+    
+</body>
+</html>

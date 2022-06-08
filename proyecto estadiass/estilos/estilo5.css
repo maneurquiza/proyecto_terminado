@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(https://fondosmil.com/fondo/3040.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* HEADER */
+
+.title h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    text-transform: uppercase;
+    background-color:#C0C0C0 ;
+    color: white;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    /* grid-template-columns: repeat(4, 1fr) 3%; */
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container>.header, 
+.container>.content,
+.container>.sidebar, 
+.container>.footer, 
+.container>div {
+    padding: 20px;
+    background-color:rgb(221, 60, 11);
+    
+}
+
+.container>.header, 
+.container>.footer {
+    grid-column: 1/-1;
+    color: white;
+}
+
+.container>.content {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.content>.article {
+    padding: 80px;
+    margin-top: 5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:rgb(221, 60, 11);
+}
+
+.content .article h1,
+.content .article p {
+    padding: 10px;
+    background-color:rgb(221, 60, 11);
+}
+
+.container>.sidebar {
+    grid-column: span 2;
+    grid-row: span 4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(221, 60, 11);
+}
+
+.container .sidebar img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.container>.related-post {
+    background: #2d3436;
+    color: #ffffff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;    
+    background-color:rgb(221, 60, 11);
+}
+
+.container>.related-post:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+}
+
+.footer{
+    width: 735px;
+    background-color:rgb(221, 60, 11);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .container .content {
+        grid-column: 1 / -1;
+    }
+    .container .sidebar {
+        grid-column: 1 / 6;
+    }
+
+    .container .related-post {
+        grid-column: 1/-1;
+    }
+}
+
+.boton{
+    background:yellowgreen;
+    padding: 20px;
+    width: 100px;
+    color:white;
+}
+

@@ -1,0 +1,172 @@
+body{
+    background: url(https://fondosmil.com/fondo/3040.jpg);
+}
+
+@media(min-width:1100px){
+    html{
+        display: flex;
+        justify-content: center;
+        font-family: cursive;
+    }
+    body {
+        width: 1100px;
+        display: flex;
+        flex-direction: column;
+    }
+    #body{
+        display: flex;
+        flex-direction: row;
+    }
+    #logo{
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        width: 780px;
+        height: 200px;
+        justify-content: center;
+        display: flex;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #btnHamburguesa{
+        display: none;
+    }
+    ul{
+        width: 700px;
+        height: 150px;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .a{
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        /* background-color: goldenrod; */
+        transition: all 0.5s ease 0s;
+        border-radius: 40px;
+    }
+    .a:hover{
+        text-decoration: none;
+        color: royalblue;
+        padding: 20px;
+        background-color: goldenrod;
+        transition: all 0.5s ease 0s;
+        border-radius: 0px;
+    }
+    main{
+        height: 810px;
+        width: 1100px;
+        display: flex;
+    }
+    aside{
+        height: 810px;
+        width: 300px;
+    }
+    article{
+        width: 800px;
+        height: 810px;
+        font-family: cursive;
+        color: white;
+    }
+    .art1{
+        width: 760px;
+        height: 250px;
+        padding: 20px;
+        display: flex;
+    }
+    #t1{
+        width: 490px;
+        height: 50px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-family: Minecraft;
+        color: white;
+        font-family: unset;
+    }
+    #inf1{
+        width: 490px;
+        height: 200px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    #caja1{
+        width: 760px;
+        height: 250px;
+        background-color:rgb(221, 60, 11);
+    }
+    .art2{
+        width: 760px;
+        height: 250px;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    #t2{
+        width: 490px;
+        height: 50px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-family: Minecraft;
+        color: white;
+        font-family: unset;
+    }
+    #inf2{
+        width: 490px;
+        height: 200px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    #caja2{
+        width: 760px;
+        height: 250px;
+        background-color:rgb(221, 60, 11);
+    }
+    .art3{
+        width: 760px;
+        height: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+    }
+    #t3{
+        width: 490px;
+        height: 50px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-family: Minecraft;
+        color:white;
+        font-family: unset;
+    }
+    #inf3{
+        width: 490px;
+        height: 200px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+    }
+    #caja3{
+        width: 760px;
+        height: 250px;
+        background-color:rgb(221, 60, 11);
+    }
+}
